@@ -398,7 +398,6 @@ Ubuntu에는 Python이 설치되어 있습니다. 하지만, Python을 사용하
 Ubuntu에서 파이썬과 C++로 개발하는데 가장 좋은 개발툴입니다.
 
 - Ubuntu Software 아이콘을 클릭합니다.
-
 - Code를 선택합니다.
 
 ![](assets/20260723_202149_image.png)
@@ -413,7 +412,6 @@ Ubuntu에서 파이썬과 C++로 개발하는데 가장 좋은 개발툴입니�
 - Korean
 - Python
 - Jupyter
-
 
 ##### Python 기본 명령어 변경
 
@@ -434,7 +432,8 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 10
 
 python package 관리자도 설치합니다.
 
-
 ```bash
 > sudo apt install python3-pip
 ```
+
+[댜음](./ROS2_2.md)
