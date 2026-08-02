@@ -117,6 +117,14 @@ USB 우선 부팅으로 CMOS를 변경 후 재부팅되면 아래의 선택 화�
 
 ![](assets/20260723_193619_image.png)
 
+##### 라즈베리파이 5 설치
+
+라즈베리파이 5에는 Ubuntu 24.04 이상 설치 가능합니다.
+
+또한 25버전 이상이어야 라즈베리파이 웹캠 등을 사용할 수 있습니다.
+
+따라서, 라즈베리파이에는 라즈비안 OS를 설치해서 ROS2를 진행해도 무방합니다.
+
 ##### Virtual Box Ubuntu 설치
 
 ![](assets/20260723_193628_image.png)
@@ -435,5 +443,28 @@ python package 관리자도 설치합니다.
 ```bash
 > sudo apt install python3-pip
 ```
+
+
+
+##### 라즈베피라이 우분투 Code 설치
+
+Arm64 인 라즈베리파이의 Ubuntu의 경우는 설치방법은 다릅니다.
+
+```bash
+sudo apt update
+sudo apt install wget gpg
+
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc \
+| gpg --dearmor \
+| sudo tee /usr/share/keyrings/packages.microsoft.gpg >/dev/null
+
+echo "deb [arch=arm64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" \
+| sudo tee /etc/apt/sources.list.d/vscode.list
+
+sudo apt update
+sudo apt install code
+```
+
+
 
 [댜음](./ROS2_2.md)
