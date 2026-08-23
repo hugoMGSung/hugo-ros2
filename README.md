@@ -219,6 +219,19 @@ Setup을 클릭합니다.
 
 ![](assets/20260723_193845_image.png)
 
+#### Ubuntu 버전확인
+
+라즈베리파이 5 의 경우 24 버전 이상 설치를 권장합니다.
+
+```bash
+$ lsb_release -a
+No LSB modules ara available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 24.04.4. LTS
+Release:        24.04
+Codename:       noble
+```
+
 #### Ubuntu 컴퓨터명 변경
 
 호스트명이 hugosung-VirtualBox로 너무 깁니다. 아래의 명령어로 조금 짧게 변경합니다.
@@ -444,8 +457,6 @@ python package 관리자도 설치합니다.
 > sudo apt install python3-pip
 ```
 
-
-
 ##### 라즈베피라이 우분투 Code 설치
 
 Arm64 인 라즈베리파이의 Ubuntu의 경우는 설치방법은 다릅니다.
@@ -465,6 +476,11 @@ sudo apt update
 sudo apt install code
 ```
 
+더 간단한 방법도 있습니다.
 
+```bash
+$ wget -O vscode.deb "https://update.code.visualstudio.com/latest/linux-deb-arm64/stable"
+$ sudo apt install ./vscode.deb
+```
 
-[댜음](./ROS2_2.md)
+[다음](./ROS2_2.md)
